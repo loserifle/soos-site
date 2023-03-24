@@ -1,0 +1,82 @@
+div {
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+#container {
+    position: relative;
+    height: 100%;
+}
+
+div h2 {
+    text-align: center;
+    font-size: 45px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.flexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flexContainer button {
+    width: 100px;
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.flexContainer button:hover {
+    animation-name: hovering;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+#tennas {
+    position: relative;
+    left: 30%;
+    visibility: hidden;
+}
+
+@keyframes hovering {
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/*    $("#soosButton").css("animation-name", "SAAS");
+    $("#soosButton").css("animation-fill-mode", "forwards");
+    $("#soosButton").css("animation-iteration-count", "1");
+    */
+.rotateme {
+    animation-name: SAAS;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes SAAS {
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75% {
+        transform: rotate(270deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#secretText {
+    background: transparent;
+    position: relative;
+    top: 380px;
+    border: 0;
+}
